@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-<<<<<<< HEAD
 import path from 'path'
 
 export default defineConfig({
@@ -24,9 +23,3 @@ export default defineConfig({
 
 
 
-=======
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
->>>>>>> 151bc1bbd724e0a783aa25f114eb68ec0b0511d8
