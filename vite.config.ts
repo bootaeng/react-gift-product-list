@@ -16,8 +16,6 @@ export default defineConfig({
     },
   },
 })
-<<<<<<< HEAD
-=======
 
 
 
@@ -30,4 +28,3 @@ export default defineConfig({
 
 
 
->>>>>>> c234505f1f108c392f5edbc854167515cf6c298d
