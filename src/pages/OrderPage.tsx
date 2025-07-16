@@ -35,20 +35,20 @@ export const OrderPage = () => {
 
   const [product, setProduct] = useState(null)
   useEffect(() => {
-  if (!productId) return
+    if (!productId) return
 
-  const fetchProduct = async () => {
-    try {
-      const res = await fetch(`/api/products/${productId}`)
-      const data = await res.json()
-      setProduct(data.data)
-    } catch (err) {
-      console.error(err)
+    const fetchProduct = async () => {
+      try {
+        const res = await fetch(`/api/products/${productId}`)
+        const data = await res.json()
+        setProduct(data.data)
+      } catch (err) {
+        console.error(err)
+      }
     }
-  }
 
-  fetchProduct()
-}, [productId])
+    fetchProduct()
+  }, [productId])
   const [orderCompleted, setOrderCompleted] = useState(false)
   const [selectedCardId, setSelectedCardId] = useState(CardData[0]?.id || null)
   const selectedCard = CardData.find((card) => card.id === selectedCardId)
