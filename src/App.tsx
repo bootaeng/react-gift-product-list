@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+import { Layout } from '@/components/Layout'
+import styled from '@emotion/styled'
+import GiftFriendSelector from '@/components/GiftFriendSelector'
+import { HomeContentCard } from '@/components/HomeContentCard'
+import { RankingSection } from '@/components/RankingSection/RankingSection'
+import { MotivationBanner } from '@/components/MotivationBanner'
+import { CategorySection } from '@/components/CategorySection/CategorySection'
+
+const AppWrapper = styled.div`
+  background-color: ${({ theme }) => theme.colors.gray[100]};
+  display: flex;
+  justify-content: center;
+`
+
+function App() {
+  return (
+    <AppWrapper>
+      <Layout>
+        <main>
+          <GiftFriendSelector />
+          <HomeContentCard>
+            <CategorySection />
+            <MotivationBanner />
+            <RankingSection />
+          </HomeContentCard>
+        </main>
+      </Layout>
+    </AppWrapper>
+  );
+=======
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -30,6 +61,7 @@ function App() {
       </p>
     </>
   )
+>>>>>>> 151bc1bbd724e0a783aa25f114eb68ec0b0511d8
 }
 
 export default App
